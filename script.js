@@ -29,10 +29,6 @@ const checkWin = () => {
            isGameOver = true;
            document.querySelector('.imgBox').getElementsByTagName('img')[0].style.width = "200px";
            document.querySelector(".line").style.width = "20vw";
-           let q = matchMedia("(max-width:900px)");
-           if(q.matches) {
-              document.querySelector(".line").style.width = "30vw";
-           }
            document.querySelector(".line").style.transform = `translate(${e[3]}vw, ${e[4]}vw) rotate(${e[5]}deg)`;
            gameOver.play();
 
